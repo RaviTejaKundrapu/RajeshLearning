@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <button onclick="saveInLs()">Save at Local Storage</button> <br>
+      <button onclick="viewItem()">View at Local Storage</button> <br>
+      <button onclick="removeItem()">delete at Local Storage</button>
+
+      <p id="displayKey"></p>
+      <textarea cols="20" rows="2"></textarea>
+      
+      <script src="script.js"></script>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+let displayKey = document.getElementById("displayKey")
+
+function saveInLs() {
+  localStorage.setItem("Name","Rajesh V")
+}
+
+function viewItem() {
+  let got = localStorage.getItem("Name")
+  displayKey.textContent = got
+}
+
+function removeItem() {
+  localStorage.removeItem("Name")
+}
