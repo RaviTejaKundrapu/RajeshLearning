@@ -1,0 +1,10 @@
+let person = {
+  name:"Rajesh",
+  age : 22
+}
+console.log(person)
+
+let convertIntoJsonObject = JSON.stringify(person)
+console.log(convertIntoJsonObject)
+
+console.log(JSON.parse(convertIntoJsonObject))
