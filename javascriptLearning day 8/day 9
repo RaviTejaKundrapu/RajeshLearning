@@ -1,3 +1,10 @@
+json supported data types are:
+1.string
+2.number
+3.json objects
+4.boolean
+5.null
+-------------------------------------------------------------------------------------
 let person = {
   name:"Rajesh",
   age : 22
