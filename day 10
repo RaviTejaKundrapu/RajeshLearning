@@ -1,0 +1,82 @@
+// Beginner Array methods
+let arr = ["apple","ball","cat","dog"]
+let adding = arr.splice(1,0,"boy") // add elements 
+let replace = arr.splice(1,1,"Angry") // replaing new element in old element place
+let remove_N_Elements = arr.splice(2,2) // removing n elements
+console.log(arr)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let arr = ["apple","ball","ball","cat"]
+
+let firstIndexOfEl = arr.findIndex((eachElement)=>{
+  if(eachElement==="ball"){
+    return true
+  }
+  else{
+    return false
+  }
+}
+)
+console.log(firstIndexOfEl)
+
+//type 2
+let arr = ["apple","ball","ball","cat"]
+
+let firstIndexOfEl = arr.findIndex(function(eachElement){
+    if(eachElement==="ball"){
+    return true
+  }
+  else{
+    return false
+  }
+}
+)
+console.log(firstIndexOfEl)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let arr = ["apple","ball","ball","cat"]
+let find_1st_index_Without_FunctionTesting = arr.indexOf("ball")
+console.log(find_1st_index_Without_FunctionTesting)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let arr = ["apple","ball","ball","cat"]
+let find_Last_index_Without_FunctionTesting = arr.lastIndexOf("ball")
+console.log(find_Last_index_Without_FunctionTesting)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//includes - returns boolean value
+let arr1 = ["apple","ball","ball","cat"]
+console.log(arr1.includes("apple")) 
+
+// find() - returns the rlrmrnt that satistied condition
+const array = [5, 12, 8, 130, 44];
+const found = array.find((elements) => elements > 10)
+console.log(found);
+
+//join() - replace the seperator with user given string
+let arr2 = ["apple","ball","cat"]
+let joinEls = arr2.join(" - ")
+console.log(joinEls)
+
+//concat()
+let array1 = ["apple","ball","ball","cat"]
+let array2 = [5, 12, 8, 130, 44]
+let array3 = array1.concat(array2)
+console.log(array3)
+
+//sort() small to big
+const array11 = [1,3,2,4,0];
+array11.sort();
+console.log(array11);
+
+// slice
+const array12 = [1,3,2,4,0]
+console.log(array12.slice(1,2));
+
+//shift()
+const array13 = ["apple","ball","cat"];
+console.log(array13)
+const firstElement = array13.shift();
+console.log(firstElement);
+console.log(array13)
+
+//unshift()
+const array14 = ["apple","ball","cat"];
+const AddElementAtfirst = array14.unshift("angry","amjur");
+console.log(array14)
