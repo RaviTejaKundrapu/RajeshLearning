@@ -1,0 +1,17 @@
+json supported data types are:
+1.string
+2.number
+3.json objects
+4.boolean
+5.null
+-------------------------------------------------------------------------------------
+let person = {
+  name:"Rajesh",
+  age : 22
+}
+console.log(person)
+
+let convertIntoJsonObject = JSON.stringify(person)
+console.log(convertIntoJsonObject)
+
+console.log(JSON.parse(convertIntoJsonObject))
